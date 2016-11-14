@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <!--[if lte IE 7]> <html class="ie-lte7" dir="ltr"> <![endif]-->
 <!--[if lte IE 9]> <html class="ie-lte9" dir="ltr"> <![endif]-->
 <!--[if !IE]><!--> <html dir="ltr">             <!--<![endif]-->
@@ -18,6 +18,7 @@
         <meta property="og:image" content="http://grandsmoulins.youandjerrycan.org/images/gif0-08.gif" />
 
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,300i,400,400i,500,500i,700" rel="stylesheet"> 
+
 	  <script>
 	    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -26,8 +27,10 @@
 
 	    ga('create', 'UA-39406468-4', 'auto');
 	    ga('send', 'pageview');
+	    _gaq.push(['_setSessionCookieTimeout', 1800000]);
 
 	  </script>
+
 		<script src="http://twemoji.maxcdn.com/twemoji.min.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.8/dojo/dojo.js"></script>
 <script type="text/javascript">
@@ -751,7 +754,7 @@ html[dir="rtl"] .dijitPlaceHolder {left:auto; right:10px;}
 			text-align: justify;
 		}
 		h1 img{
-			max-width:100%;
+			max-width:60%;
 			height:auto !important;
 			vertical-align:bottom;
 		}
@@ -815,6 +818,11 @@ html[dir="rtl"] .dijitPlaceHolder {left:auto; right:10px;}
 			color:#FFFFFF;
 			font-family: 'Roboto Mono', monospace;
 		}
+		h3 img{
+			max-height:60px;
+			height:auto !important;
+			vertical-align:bottom;
+		}
 		#templateContainer{
 			background-color:none;
 		}
@@ -831,9 +839,9 @@ html[dir="rtl"] .dijitPlaceHolder {left:auto; right:10px;}
 		}
 		.floating-box {
 		    display: inline-block;
-		    width: 156px;
+		    /*width: 156px;
 		    height: 100px;
-		    margin: 10px;
+		    */margin: 10px;
 	/*		border: 2px solid black;*/
 		}
 
@@ -841,6 +849,12 @@ html[dir="rtl"] .dijitPlaceHolder {left:auto; right:10px;}
 		    border: 3px solid red; 
 		}
 		img {
+		    display: block;
+		    margin: 0 auto;
+		    width: 100%;
+		    height: auto;
+		}	
+		div.photo{
 		    display: block;
 		    margin: 0 auto;
 		    width: 100%;
@@ -862,13 +876,13 @@ html[dir="rtl"] .dijitPlaceHolder {left:auto; right:10px;}
 			color:white;
 		}
 		a:hover{
-			color:#F16521;
+			color:black;
 /*			background-color:#262626;*/
-			opacity:0.9;
+			opacity:0.7;
 		}
 		.button:link,.button:active,.button:visited,.button,.button span{
 			background-color:white !important;
-			color:#26262626 !important;
+			color:black !important;
 		}
 		.button:hover{
 			background-color:#F16521 !important;
@@ -950,30 +964,35 @@ html[dir="rtl"] .dijitPlaceHolder {left:auto; right:10px;}
 		<div class="wrapper rounded6" id="templateContainer">
 		    <div id="templateBody" class="bodyContent rounded6">
 				<div id="subscribeFormWelcome">
-					<h1><br><br><br><br><img src="images/cemgmlogo-01.svg" width="350 px"></h1>
+					<img src="images/emd.svg" max-width="250"></h1>
 					<br><br>
-					<p>Une serie d'ateliers pour imaginer et concevoir des <a href="http://www.adoptajerry.cc" target="_blank">ordinateurs Jerrys</a> pour la Bibliothèque des Grands Moulins et pour transformer notre vision du numérique, en Octobre et Novembre 2016
-					<br><br><br>
-					<span style ="text-transform: uppercase; font-weight:500; color:#262626">=== <span style ="letter-spacing:2px">Qui sont les Etres-Machines ?</span> </span>
-					<br>
-					Des ordinateurs upcyclés – tout est récupéré pour être réutilisé - et fabriqués pendant des ateliers de bidouilles.<br><br>
-
-					<span style ="text-transform: uppercase; font-weight:500; color:#262626">=== <span style ="letter-spacing:2px">Avec qui ?</span> ======================</span><br>
-					Un Être-Machine se construit ensemble.<br>Nous, contributeur-ices aguerri-es de la communauté JerryClan, allons te donner des pistes - du matos aussi, pour imaginer, prototyper et construire cette créature hydride au service de la cause connaissance.<br><br>
+					<div class = sous>
+						<h3><span style ="font-weight:300; font-size:18px; line-height=160%"><br><br>Rejoignez-nous pour le construire<br>du 15 au 18 Novembre<br><br></span>
+<span style ="text-transform: uppercase; font-weight:500; font-size:19px"> >>> >> <a href="http://youandjerrycan.us1.list-manage1.com/track/click?u=ad1f94edb7d1d4b5839148c71&id=9c37ec0849&e=70dd2fbf5c" target="_blank">Inscription gratuite</a> << <<< </span><br><br><br></h3>
+					</div>
+					<p><br>
+<span style ="text-transform: uppercase; font-weight:500; color:#262626">=== <span style ="letter-spacing:2px">Qui est l'Être-Machine de la connaîssance ?<br></span></span>
+					Une borne numérique interactive, construite par et pour les usagers de la bibliothèque des Grands Moulins. <br>Son nom ? l'Hydra, elle aura plusieurs têtes et plusieurs fonctions :<br><br>
+					>>>>> Que lire ? : grâce à un quizz express, Hydra vous suggérera un surprenant ouvrage à consulter.<br><br>
+					>>>>> Le Grimoire des URL : proposez des idees de site web que vous confierez à Hydra qui les patagera avec les usagers de la biblio<br><br>
+					>>>>> Mosahydre : Hydra va créer une oeuvre évolutive en utilisant des photos prises en live par une webcam.
+					<br><br>
+					<!--span style ="text-transform: uppercase; font-weight:500; color:#262626">=== <span style ="letter-spacing:2px">Avec qui ?</span> ======================</span><br>
+					Un Être-Machine se construit ensemble.<br>Nous, contributeur-ices aguerri-es de la communauté JerryClan, allons te donner des pistes - du matos aussi, pour imaginer, prototyper et construire cette créature hydride au service de la cause connaissance.<br><br-->
 					
-					<span style ="text-transform: uppercase; font-weight:500; color:#262626">=== <span style ="letter-spacing:2px">Notre mission ?</span> ================</span><br>Te guider pendant ce mouvement de co-création.<br><br>
-
-					<span style ="text-transform: uppercase; font-weight:500; color:#262626">=== <span style ="letter-spacing:2px">Pourquoi ?</span> ======================</span><br>
+					<span style ="text-transform: uppercase; font-weight:500; color:#262626">=== <span style ="letter-spacing:2px">Notre mission ?</span> ================</span><br>Te guider pendant ce mouvement de co-création.<br><br><br>
+					<!--span style ="text-transform: uppercase; font-weight:500; color:#262626">=== <span style ="letter-spacing:2px">Pourquoi ?</span> ======================</span><br>
 					Pour que tu ne passes plus dans le hall de la bibliothèque sans saluer cet Être Machine que tu auras créé. L’objectif est d’imaginer une créature capable de valoriser le patrimoine numérique de la bibliothèque = données invisibles + vieux PC inexploités.<br><br>
 
 					<span style ="text-transform: uppercase; font-weight:500; color:#262626">=== <span style ="letter-spacing:2px">Comment ?</span> =======================</span><br>
-					Pendant plusieurs ateliers gratuits articulés autour de méthodologies participatives et agiles.<br><br><br>
-					<img src="images/bidon.JPG">
-<br><br>					
-					Les prochains ateliers : <br></p>
+					Pendant plusieurs ateliers gratuits articulés autour de méthodologies participatives et agiles.<br><br><br-->
+					<img src="images/bidon.JPG" max-width="350">
+<br><br>
+					<span style="text-transform: uppercase; font-weight:500">Nous avons le plan (<a href="https://docs.google.com/presentation/d/1CP4FEEgOBlryQBrsG9phYODizFGiC3HSCSFkxgYbX5M/edit#slide=id.p">voir le plan détaillé</a>), maintenant à l'ACTION ! </span><br><br></span>
+</p>
 					
 					<div class="sous">
-						<h2><br><br>=== Lundi 17 Octobre / 16H-19H ===<br></h2>
+						<!--h2><br><br>=== Lundi 17 Octobre / 16H-19H ===<br></h2>
 						<h3><span style ="text-transform: uppercase; font-weight:500; font-size:17px; line-height=160%">1er atelier de conception </span>
 							<br>- Histoire - Électronique - Interface Imaginaire -<br>- Utilisateurs-Machine - Couleurs... <br>
 							@Bibliothèque des Grands Moulins - <br>Galerie du 2ème étage<br><br>
@@ -989,54 +1008,41 @@ html[dir="rtl"] .dijitPlaceHolder {left:auto; right:10px;}
 						<h3><span style ="text-transform: uppercase; font-weight:500; font-size:17px; line-height=160%">Atelier de décoration sur les vitres de la Bibliothèque</span> 
 						<br><a href="https://www.facebook.com/518513301524401/photos/pcb.215041628914137/1213161705392887/?type=3&theater" target="_blank">Exemples</a><br>
 						@Le Fablab de Paris 7 / BGM*<br><br>
-						</h3>
+						</h3-->
 		
-						<h2>===>>>> du 15 au 18 NOVEMBRE <<<<===<br></h2>
-						<h3><span style ="text-transform: uppercase; font-weight:500; font-size:17px; line-height=160%">Finalisation des Êtres-Machines</span> 
-							<br>À L'occasion du Festival Des Idées.<br>
-3 demies-journées - [Heure et lieux à préciser]<br><br><br>
-						</h3>
+						<br><br><h3><span style ="text-transform: uppercase; font-weight:500; font-size:17px; line-height=160%">//\\\\ Finalisation des Êtres-Machines ////\\</span><br></h3>
+						À L'occasion du Festival Des Idées<br>
+						- Entrée gratuite sur inscription -
+						<br><br><h2>===>>>> mardi 15 NOVEMBRE / 9h-13h <<<<===<br></h2>
+						<h3>Construire le Corps de l'Être-Machine<br>
+						@<a href="http://www.univ-paris-diderot.fr/sc/site.php?bc=formations&np=FABLAB+PARIS+DIDEROT&g=m">le Fablab Diderot</a> - Halle au Farines<br><br></h3>
+						<h2>===>> Jeudi & vendredi 17 & 18 NOVEMBRE <<===<br></h2>
+						<h3>l'Âme de l'Être-Machine<br>
+						@<a href="http://bibliotheque.univ-paris-diderot.fr/">Bibliothèque des Grands Moulins</a>, Galerie (2e étage)
+						<br><br><br></h3>
 					</div> 
-				</div>
 				
-				<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-				
-				<form action="//youandjerrycan.us1.list-manage.com/subscribe/post?u=ad1f94edb7d1d4b5839148c71&amp;id=41403d2ed0" method="POST">
-				<input type="hidden" name="u" value="9b4983a3d6053a50eac28a5ce">
-				<input type="hidden" name="id" value="3fe800a414">
-				<div id="mergeTable" class="mergeTable">
-					<div class="mergeRow dojoDndItem mergeRow-email" id="mergeRow-0">
-						<br><label for="MERGE0">Inscrivez-vous à notre <span style="text-transform:uppercase">mailing list </span>pour suivre nos actions :</label>
-						<!--minus :  <span class="req asterisk">*</span>-->
-						<div class="field-group">
-							<input type="email" autocapitalize="off" autocorrect="off" name="MERGE0" id="MERGE0" size="25" value="">
-							<div class="field-help">Entrez votre adresse mail</div>
-						</div>
+					<div class = sous>
+						<h3><span style ="font-weight:300; font-size:18px; line-height=160%"><br><br>Rejoignez-nous pour le construire<br>du 15 au 18 Novembre<br><br></span>
+<span style ="text-transform: uppercase; font-weight:500; font-size:19px"> >>> >> <a href="http://youandjerrycan.us1.list-manage1.com/track/click?u=ad1f94edb7d1d4b5839148c71&id=9c37ec0849&e=70dd2fbf5c" target="_blank">Inscription gratuite</a> << <<< </span><br><br><br></h3>
 					</div>
-				</div>
-<!-- real people should not fill this in and expect good things -->
-				<div class="hidden-from-view" aria-hidden="true"><input type="text" name="b_9b4983a3d6053a50eac28a5ce_3fe800a414" tabindex="-1" value=""></div>
 
-				<div class="submit_container clear", id="submit_container_clear">
-					<input type="submit" class="button" name="submit" value="S'enregistrer / Subscribe">
-				</div>
-				</form>
-					<br><br><br>
-						<img src="images/gif0-08.gif" width="350px">
-				
-				<h3><br><br>Ateliers organisés dans le cadre du Festival des Idées 2016 <br>*@la Bibliothèque universitaire de Paris 7 - <a href="https://www.google.fr/search?q=5+rue+Thomas+Mann%2C+Paris+13e.&ie=utf-8&oe=utf-8&client=firefox-b-ab&gfe_rd=cr&ei=EavWV5SBHo-ZwAKj-7DoCg" target="_blank">5 rue Thomas Mann - 13e </a>
-					<br>Plus d'infos sur <a href="https://www.facebook.com/events/1752984478274536/" target="_blank">facebook</a><br><br></h3>
+					<h1><br><img src="images/gif2.gif" max-width="350"><br></h1>
+					<h3>
+					"Construire l'être machine des Grands Moulins", une serie d'ateliers pour imaginer et concevoir des <a href="http://www.adoptajerry.cc" target="_blank">ordinateurs Jerrys</a> pour la Bibliothèque des Grands Moulins et pour transformer notre vision du numérique, en Octobre et Novembre 2016. Organisés dans le cadre du Festival des Idées 2016 <br>*@la Bibliothèque universitaire de Paris 7 - <a href="https://www.google.fr/search?q=5+rue+Thomas+Mann%2C+Paris+13e.&ie=utf-8&oe=utf-8&client=firefox-b-ab&gfe_rd=cr&ei=EavWV5SBHo-ZwAKj-7DoCg" target="_blank">5 rue Thomas Mann - 13e </a>
+					<br>Plus d'infos sur <a href="https://www.facebook.com/events/1752984478274536/" target="_blank">facebook</a><br><br>
+				</h3>
 
-				<div class="floating-box"><a href="http://bibliotheque.univ-paris-diderot.fr/bc" target="_blank"> <img src="images/bgmlogo.svg"> </a> </div>
+				<div class="floating-box"><a href="https://www.facebook.com/festivaldesidees/home" target="_blank"><img src="images/uspc_logo.svg"> </a> </div><br><br>
 				<div class="floating-box"><a href="http://youandjerrycan.org/" target="_blank"><img src="images/jerry_logo.svg"> </a> </div>
-		</br>
-				<div class="floating-box"><a href="https://www.facebook.com/festivaldesidees/home" target="_blank"><img src="images/uspc_logo.svg" height="55 px"> </a> </div>
+				<div class="floating-box"><a href="http://lesanimauxdufutur.org/" target="_blank"><img src="images/adf.svg"> </a> </div>
+				<div class="floating-box"><a href="http://bibliotheque.univ-paris-diderot.fr/bc" target="_blank"> <img src="images/bgmlogo.svg"> </a> </div>
 				<div class="floating-box"><a href="http://www.univ-paris-diderot.fr/sc/site.php?bc=accueil&np=accueil" target="_blank"><img src="images/paris7_logo.svg"> </a> </div>
 				
+				<h3><span style = "text-align:center"><br><br>Web page by <a href="https://haniju.fr">Justine Hannequin</a>, digital product designer</span></h3>
+
+				</div>			
 			</div>
-		</div> 
-		<div class="poweredWrapper">
-			<span class="poweredBy"><a href="http://www.mailchimp.com/monkey-rewards/?utm_source=freemium_newsletter&utm_medium=email&utm_campaign=monkey_rewards&aid=9b4983a3d6053a50eac28a5ce&afl=1" target="_blank"><img src="http://cdn-images.mailchimp.com/monkey_rewards/MC_MonkeyReward_04.png" border="0" alt="Email Marketing Powered by MailChimp" title="MailChimp Email Marketing" width="100"></a></span>
 		</div>
     </body>
 </html>
